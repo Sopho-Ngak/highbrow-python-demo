@@ -1,0 +1,46 @@
+Assignment: Student Grade Management System
+Requirements:
+
+Create a program that manages student grades. The program should include the following functionalities:
+
+    Student Class:
+        Create a Student class with attributes name and grades.
+        Implement methods to:
+            Initialize a student with a name.
+            Add a grade to the student's record.
+            Calculate and return the average grade of the student.
+
+    Grade Management Module:
+        Create a Python module named grade_management.py.
+        Implement a function add_grade(student_name, grade) that adds a grade to a student's record.
+        Implement a function calculate_average(student_name) that calculates the average grade of a student.
+
+    Error Handling:
+        Implement error handling using try-except blocks to handle the following scenarios:
+            If a student's name is not found when adding or calculating grades, raise a StudentNotFoundError.
+            If an invalid grade (not a number between 0 and 100) is provided, raise a InvalidGradeError.
+
+    Inheritance:
+        Create a subclass HonorsStudent that inherits from the Student class.
+        Override the calculate_average method to include a bonus of 5% to the average grade.
+
+Instructions:
+
+    Start by defining the Student class with its attributes and methods.
+    Create the grade_management.py module with functions to add grades and calculate average grades.
+    Implement error handling using try-except blocks in the functions of the module.
+    Create the HonorsStudent subclass and override the necessary method.
+    Write a main program (can be a separate Python script) to test the functionalities of the system.
+
+project structure:
+    student_grade_management/
+    ├── grade_management.py
+    ├── student.py
+    └── main.py
+
+student.py file contains the Student class and the HonorsStudent subclass (inherits Student class).
+grade_management.py file contains the add_grade and calculate_average functions, StudentNotFoundError (inherits Exception class), and InvalidGradeError.
+e.g: 
+class InvalidGradeError(Exception):
+    pass
+main.py file contains the main program to test the functionalities of the system.
