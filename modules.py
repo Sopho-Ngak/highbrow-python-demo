@@ -40,7 +40,10 @@ pip
 # Python virtual environment on ubuntu
 # sudo apt install python3-venv
 # python3 -m venv myenv
+# python3 -m venv name_of_virtual_environment
 # source myenv/bin/activate
+# sudo apt install postgresql
+# sudo -u postgres psql
 
 from functions import *
 
